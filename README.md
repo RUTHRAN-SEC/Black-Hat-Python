@@ -18,7 +18,7 @@ By studying these scripts, learners can:
 
 This repository promotes security awareness and responsible learning.
 
-## Disclaimer
+## ⚠️ Disclaimer
 
 This project is created strictly for educational and ethical purposes.
 All scripts must be used only on systems you own or have explicit permission to test.
