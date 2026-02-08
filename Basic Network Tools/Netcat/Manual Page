@@ -1,0 +1,28 @@
+netcat: Python based TCP client/server networking tool.
+
+SYNOPSIS
+python netcat.py [options]
+
+DESCRIPTION
+
+A lightweight Python Netcat implementation supporting TCP connections, remote command execution, file uploads, and interactive shells. 
+Designed for learning networking and security concepts in lab environments.
+
+OPTIONS
+-c, --command        Start interactive command shell
+-e, --execute CMD    Execute a command on connection
+-l, --listen         Run in listen (server) mode
+-p, --port PORT      Target port (default: 5555)
+-t, --target IP      Target IP address
+-u, --upload FILE    Upload file to server
+
+EXAMPLES
+python netcat.py -l -p 5555 -c
+python netcat.py -t 192.168.1.108 -p 5555
+python netcat.py -l -u test.txt
+echo "Hi" | python netcat.py -t 192.168.1.108 -p 135
+
+SECURITY NOTICE
+
+⚠️ Use only on authorized systems.
+For educational and defensive security purposes only.
