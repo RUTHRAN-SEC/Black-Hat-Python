@@ -1,20 +1,30 @@
-import socket 
+import socket                          # Import the socket module for network communication
 
-#creating a host and port to connect
-target_host="www.google.com"
-target_port=80
+# Creating a host and port to connect
+target_host = "www.google.com"         # Target domain name to connect to
+target_port = 80                      # Port 80 is used for HTTP traffic
 
-#creating a socket object
-client = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+# Creating a socket object
+client = socket.socket(
+    socket.AF_INET,                   # Use IPv4 addressing
+    socket.SOCK_STREAM                # Use TCP (connection-oriented protocol)
+)
 
-#connecting to the client
-client.connect((target_host,target_port))
+# Connecting to the target host and port
+client.connect((target_host, target_port))
 
-#Sending some data 
-client.send(b"GET / HTTP/1.1\r\nHost:google.com\r\n\r\n")
+# Sending some data
+client.send(
+    b"GET / HTTP/1.1\r\n"              # HTTP GET request for the root page
+    b"Host:google.com\r\n"             # Host header specifying the domain
+    b"\r\n"                            # Blank line indicating end of HTTP headers
+)
 
-#Reciving some data 
-response = client.recv(4096)
+# Receiving some data
+response = client.recv(4096)           # Receive up to 4096 bytes of data from the server
 
+# Decode and print the server response
 print(response.decode())
+
+# Close the socket connection
 client.close()
