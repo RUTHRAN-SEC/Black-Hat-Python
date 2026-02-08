@@ -1,46 +1,54 @@
-# Project: TCP Client using Python
+# Projetc: TCP Client and Server using Python
 
 ## Project Description
 
-This project demonstrates the implementation of a TCP client using Python to establish communication with a remote server over a network. The TCP client connects to a specified IP address and port, sends data to the server, and receives responses in a reliable, connection oriented manner.
+This project demonstrates the implementation of a TCP client and server using Python sockets to enable reliable, connection-oriented communication between two systems. The server listens for incoming client connections, handles multiple clients using threading, and processes data sent by clients. The client establishes a connection to the server, sends requests, and receives responses.
 
-The project helps in understanding core networking concepts such as TCP handshakes, client-server architecture, sockets, and data transmission. It is especially useful for cybersecurity learners to understand how attackers and defenders interact with network services during scanning, exploitation, and command-and-control communication.
-
-This project forms a foundational skill for penetration testing, malware analysis, and SOC investigations.
+The project provides a strong foundation for understanding network communication, client-server architecture, and how network-based tools operate in cybersecurity environments.
 
 ## Learning Objectives
 
-+ Understand TCP client-server communication
-+ Learn how data is sent and received over TCP
-+ Analyze how network-based attacks and tools communicate
-+ Build a base for advanced security scripts
++ Understand TCP/IP communication fundamentals
++ Learn client-server architecture
++ Explore socket programming in Python
++ Understand how data is transmitted over networks
++ Build a foundation for network security and penetration testing
++ Analyze how network services interact in real-world systems
 
 ## Requirements for the Project
++ Basic knowledge of Python programming
++ Understanding of networking concepts (IP, ports, TCP)
++ Command-line usage
++ Ethical and authorized testing environment
 
 ### Software Requirements
-+ Python 3.14
-+ Any code editor (VS Code, PyCharm, Sublime Text, etc.)
-+ Command Line / Terminal
++ Python 3.x
++ Code editor (VS Code, PyCharm, Sublime Text, etc.)
++ Terminal or Command Prompt
 
 ### Python Libraries Used
-+ socket (for TCP communication)
-+ sys (optional, for arguments and exit handling)
++ socket – for TCP communication
++ threading – for handling multiple client connections concurrently
 + (All libraries are part of Python’s standard library)
 
 ### System Requirements
 + Windows / Linux / macOS
-+ Basic networking enabled (loopback or local network)
++ Minimum 4 GB RAM (recommended)
++ Network interface enabled (local or loopback network)
 
-## Security Relevance
-
-+ Helps understand how backdoors, reverse shells, and C2 clients work
-+ Useful for analyzing network traffic in Wireshark
-+ Builds foundational knowledge for red team and blue team roles
+### Security Relevance
+Understanding TCP client-server communication is critical in cybersecurity. This project helps learners:
++ Analyze how attackers communicate with services
++ Understand backdoors, reverse shells, and command-and-control traffic
++ Detect suspicious network activity
++ Perform network traffic analysis using tools like Wireshark
++ Strengthen defensive monitoring and response skills
 
 ## ⚠️ Disclaimer
 
-This project is intended only for educational and authorized use.
-Do not connect to systems or services without permission.
+This project is intended strictly for educational and ethical purposes.
+All testing must be performed only on systems you own or have explicit authorization to test.
+The author is not responsible for any misuse or illegal activity resulting from the use of this project.
 
 ## Author
 ### RUTHRAN-SEC
