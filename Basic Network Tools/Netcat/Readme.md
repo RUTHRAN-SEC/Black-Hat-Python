@@ -47,6 +47,7 @@ This project uses only built-in Python libraries:
 
 ### Security Relevance
 This project is highly relevant in the field of Cybersecurity:
+
 ⚠️This tool should be used only in controlled environments such as labs or personal test systems.
 + Demonstrates how attackers and defenders use Netcat
 + Helps understand reverse shells and bind shells
